@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MemberFind.html </title>
+
+    <style>
+        *{
+            font-size: 12px;
+        }
+        #div1{border:solid 4px;
+            border-top-color: #9C9C9A;
+            border-right-color: #EBEBE7;
+            border-bottom-color: #EBEBE7;
+            border-left-color: #9C9C9A;
+            margin-top: 10px; width: 700px;}
+        #div2{border:solid 4px;
+            border-top-color: #EBEBE7;
+            border-right-color: #9C9C9A;
+            border-bottom-color: #9C9C9A;
+            border-left-color: #EBEBE7;
+            width: 692px; padding: 40px 140px 30px 100px;}
+        #div1, #div2{
+            box-sizing: border-box;
+        }
+        #notice{text-align: center; font-size: 12px; color: #75746D;}
+        table{border-spacing: 10px; margin: 0;} 
+        .find{color: #64635d; font-weight: bold;}
+        input[type=text]{ color:#75746D; border: 1px solid #CCCCCC;}
+        .size{width: 200px;}
+        select{border: 1px solid #CCCCCC; width: 100px;}
+        td{font-weight: bolder; color: #64635d;}
+    </style>
+</head>
+<body>
+    <input type="radio" name="idfind" id="id1" checked><span class="find">아이디찾기</span>&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="radio" name="idfind" id="pw1"><span class="find">비밀번호찾기</span>
+
+    <div id="div1">
+    <div id="div2">
+        <table>
+            <tr>
+                <td><span style="color: red;"><b>> </b></span>이름(대표자명)</td>
+                <td><input type="text" class="size"></td>
+            </tr>
+            <tr>
+                <td><span style="color: red;"><b>> </b>
+                    <select name="phone">
+                        <option value="default" disabled selected>휴대전화</option>
+                        <option value="SKT" >SKT</option>
+                        <option value="KT" >KT</option>
+                </td>
+                <td>
+                    <input type="text" name="phonenum1" size="3"> -
+                    <input type="text" name="phonenum2" size="4"> -
+                    <input type="text" name="phonenum3" size="4">
+                </td>
+            </tr>
+        </table>
+        <div style="letter-spacing:2px; text-align: center; margin: 0; padding:0;">
+            ······································································</div>
+        <br><br>
+        
+            <div id="notice">
+            아이디를 찾기 위해서 이름과 휴대번호 혹은 이메일을 입력하세요.
+        </div>
+        
+        </div>
+    </div>
+
+
+
+    <br><br><br><br><br>
+    <input type="radio" name="pwfind" id="id2"><span class="find">아이디찾기</span>&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="radio" name="pwfind" id="pw2"><span class="find" checked>비밀번호찾기</span>
+
+    <div id="div1">
+    <div id="div2">
+        <table>
+            <tr>
+                <td><span style="color: red;"><b>> </b></span>아이디</td>
+                <td><input type="text" class="size"></td>
+            </tr>
+            <tr>
+                <td><span style="color: red;"><b>> </b></span>이름(대표자명)</td>
+                <td><input type="text" class="size"></td>
+            </tr>
+            <tr>
+                <td><span style="color: red;"><b>> </b>
+                    <select name="email">
+                        <option value="default" disabled selected>이메일</option>
+                        <option value="phone" >휴대전화</option>
+
+                </td>
+                <td>
+                    <input type="text" name="phonenum1" size="6"> @
+                    <input type="text" name="phonenum2" size="8"> 
+                    <select name="emailadr" style="width: 80px;">
+                        <option value="default" disabled selected>직접입력</option>
+                        <option value="phone" >휴대전화</option>
+                </td>
+            </tr>
+        </table>
+        <div style="letter-spacing:2px; text-align: center; margin: 0; padding:0;">
+            ······································································</div>
+        <br><br>
+        
+            <div id="notice">
+            비밀번호를 찾기 위해서 아이디, 이름과 휴대번호 혹은 이메일을 입력하세요.
+        </div>
+        
+        </div>
+    </div>
+</body>
+</html>
