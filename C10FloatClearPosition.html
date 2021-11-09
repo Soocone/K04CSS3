@@ -42,8 +42,8 @@
             div3에서 float속성을 제거하면 아래로 떨어진다.
          -->
         <div class="div1" style="float:left; width: 100px;">div1</div>
-        <div class="div2" style="float:lef; width: 100px;">div2</div>
-        <div class="div3" style="float:right; width: 100px;">div3</div>
+        <div class="div2" style="float:left; width: 100px;">div2</div>
+        <div class="div3" style="float:left; width: 100px;">div3</div>
     </fieldset>
 
     <fieldset>
@@ -111,7 +111,7 @@
 
     <!-- 
         앞서 배치된 엘리먼트의 위치에 상대적인 위치값을 지정받게되어
-        div2의 경우 di1 아래쪽에 배치된다. 또한 div2에 left, top을 부여하면
+        div2의 경우 div1 아래쪽에 배치된다. 또한 div2에 left, top을 부여하면
         div1을 기준으로 위치값이 설정된다.
      -->
     <fieldset style="position: relative;">
@@ -129,7 +129,7 @@
         엘리먼트의 position 속성이 absolute인 경우
         부모엘리먼트가 
             static인 경우=> 웹브라우저의 좌상단이 기준점이 된다
-                따라서 웹브라우저상의 어떤 위치ㅣ라도 엘리먼트를 floating시킬 수 있다.
+                따라서 웹브라우저상의 어떤 위치라도 엘리먼트를 floating시킬 수 있다.
             static이 아닌 경우=> 부모엘리먼트가 기준이 된다.
      -->
     <fieldset style="position: relative;">
